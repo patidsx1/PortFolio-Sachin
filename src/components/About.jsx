@@ -11,13 +11,13 @@ export default function About() {
     {
       icon: Award,
       title: "Expertise",
-      description: "MERN/MEAN Stack Development",
+      description: "MERN/MEAN Stack and UI Development",
       color: "from-purple-500 to-pink-500"
     },
     {
       icon: TrendingUp,
       title: "Impact",
-      description: "35% Performance Improvements",
+      description: "28% Performance Improvements",
       color: "from-orange-500 to-red-500"
     },
     {
@@ -36,7 +36,7 @@ export default function About() {
       achievements: [
         "Built responsive SPAs using React.js, Angular, JavaScript and TypeScript, increasing user engagement by 25%",
         "Developed RESTful APIs using Express.js and Node.js with MongoDB integration",
-        "Automated frontend development using Lovable AI, reducing time by 35%",
+        "Automated frontend development using Lovable AI, reducing time by 30%",
         "Optimized Angular performance with lazy loading, reducing load times by 30%"
       ]
     },
@@ -46,7 +46,7 @@ export default function About() {
       period: "Apr 2022 – Sep 2023",
       achievements: [
         "Developed Angular UI for Aveva product using MEAN Stack",
-        "Implemented Next.js SSR/SSG, improving SEO and performance by 35%",
+        "Implemented Next.js SSR/SSG, improving SEO and performance by 32%",
         "Created Node.js/Express.js services with MongoDB persistence",
         "Integrated jQuery, D3, ExcelJS, Okta, JWT Auth"
       ]

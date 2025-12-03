@@ -26,7 +26,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg mb-8 hover:scale-105 transition-transform">
             <Sparkles className="w-4 h-4 text-purple-600" />
-            <span className="text-sm font-semibold text-gray-700">Available for Full-Stack Opportunities</span>
+            <span className="text-sm font-semibold text-gray-700">Available for Full-Stack & UI Developer Opportunities</span>
           </div>
 
           {/* Main Title */}
@@ -95,7 +95,7 @@ export default function Hero() {
             <div className="text-gray-600">Years Experience</div>
           </div>
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
+            <div className="text-4xl font-bold text-purple-600 mb-2">20+</div>
             <div className="text-gray-600">Projects Delivered</div>
           </div>
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
