@@ -11,7 +11,7 @@ export default function About() {
     {
       icon: Award,
       title: "Expertise",
-      description: "MERN/MEAN Stack and UI Development",
+      description: "MERN/MEAN Full Stack and UI Development",
       color: "from-purple-500 to-pink-500"
     },
     {
@@ -37,7 +37,7 @@ export default function About() {
         "Built responsive SPAs using React.js, Angular, JavaScript and TypeScript, increasing user engagement by 25%",
         "Developed RESTful APIs using Express.js and Node.js with MongoDB integration",
         "Automated frontend development using Lovable AI, reducing time by 30%",
-        "Optimized Angular performance with lazy loading, reducing load times by 30%"
+        "Optimized Angular performance with lazy loading, reducing load times by 25%"
       ]
     },
     {
@@ -46,7 +46,7 @@ export default function About() {
       period: "Apr 2022 – Sep 2023",
       achievements: [
         "Developed Angular UI for Aveva product using MEAN Stack",
-        "Implemented Next.js SSR/SSG, improving SEO and performance by 32%",
+        "Implemented Next.js SSR/SSG, improving SEO and performance by 25%",
         "Created Node.js/Express.js services with MongoDB persistence",
         "Integrated jQuery, D3, ExcelJS, Okta, JWT Auth"
       ]
@@ -82,9 +82,9 @@ export default function About() {
           {highlights.map((item, idx) => {
             const Icon = item.icon;
             return (
-              <div key={idx} className="group relative">
+              <div key={idx} className="group relative h-full">
                 <div className="absolute inset-0 bg-gradient-to-r ${item.color} rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity"></div>
-                <div className="relative bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-transparent hover:shadow-xl transition-all duration-300">
+                <div className="relative bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-transparent hover:shadow-xl transition-all duration-300 h-full">
                   <div className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${item.color} mb-4`}>
                     <Icon className="w-6 h-6 text-white" />
                   </div>

@@ -12,11 +12,11 @@ export default function Projects({ setCurrentPage, setWorkPage }) {
     },
     {
       category: "Database & Tools",
-      techs: ["MongoDB", "MySQL", "AWS", "Git/GitHub", "Docker", "CI/CD", "Jest", "Jasmine", "Jira", "Azure DevOps"]
+      techs: ["MongoDB", "MySQL", "AWS Basics", "Git/GitHub", "Docker", "CI/CD", "Jest", "Jasmine", "Jira", "Azure DevOps"]
     },
     {
       category: "AI Tools",
-      techs: ["GitHub Copilot", "Lovable", "ChatGPT", "Claude AI", "Tabnine"]
+      techs: ["GitHub Copilot", "Lovable", "ChatGPT", "Claude AI"]
     }
   ];
 
@@ -37,7 +37,7 @@ export default function Projects({ setCurrentPage, setWorkPage }) {
       description: "Beautiful weather application with 7-day forecasts, hourly updates, and dynamic backgrounds. Features city search and detailed weather metrics.",
       icon: Cloud,
       gradient: "from-purple-500 to-pink-500",
-      tags: ["React", "Lucide Icons", "Glassmorphism", "API"],
+      tags: ["React", "Redux", "Express", "API"],
       action: () => {
         setCurrentPage("work");
         setWorkPage("weather");
@@ -84,7 +84,7 @@ export default function Projects({ setCurrentPage, setWorkPage }) {
           <h2 className="text-5xl font-bold text-center mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
             Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 text-center mb-12">Showcasing my UI/UX design and development skills</p>
+          <p className="text-xl text-gray-600 text-center mb-12">Showcasing my Full stack/UI ,Cloud deployments skills</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, idx) => {
