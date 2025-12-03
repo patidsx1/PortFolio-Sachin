@@ -1,6 +1,16 @@
 import { Github, Linkedin, Mail, Phone, MapPin, Download, Code2, Sparkles } from "lucide-react";
+import resumePDF from "../assets/Sachin_Patidar_Resume.pdf";
 
 export default function Hero() {
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = resumePDF;
+    link.download = "Sachin_Patidar_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -68,7 +78,10 @@ export default function Hero() {
               <Github className="w-5 h-5" />
               View GitHub
             </a>
-            <button className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <button
+              onClick={handleDownloadResume}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            >
               <Download className="w-5 h-5" />
               Download Resume
             </button>
