@@ -343,7 +343,7 @@ export default function Weather() {
 
         {/* Sun Times */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          <div className="bg-gradient-to-br from-orange-400 to-pink-400 rounded-2xl p-6 shadow-lg">
+          <div className="bg-gradient-to-br from-amber-300 via-orange-300 to-pink-300 rounded-2xl p-6 shadow-lg">
             <div className="flex items-center justify-between">
               <div>
                 <div className="flex items-center gap-2 mb-2">
@@ -356,7 +356,7 @@ export default function Weather() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl p-6 shadow-lg">
+          <div className="bg-gradient-to-br from-blue-400 via-indigo-400 to-purple-400 rounded-2xl p-6 shadow-lg">
             <div className="flex items-center justify-between">
               <div>
                 <div className="flex items-center gap-2 mb-2">

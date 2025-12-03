@@ -26,25 +26,35 @@ import {
 } from "lucide-react";
 
 export default function Dashboard() {
-  // Revenue data over time
-  const revenueData = [
-    { month: "Jan", revenue: 4200, expenses: 2400, profit: 1800 },
-    { month: "Feb", revenue: 5100, expenses: 2800, profit: 2300 },
-    { month: "Mar", revenue: 4800, expenses: 2600, profit: 2200 },
-    { month: "Apr", revenue: 6300, expenses: 3200, profit: 3100 },
-    { month: "May", revenue: 7200, expenses: 3500, profit: 3700 },
-    { month: "Jun", revenue: 8500, expenses: 3800, profit: 4700 },
-  ];
+  // Generate last 6 months dynamically
+  const getLastSixMonths = () => {
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const today = new Date();
+    const lastSixMonths = [];
+    
+    for (let i = 5; i >= 0; i--) {
+      const date = new Date(today.getFullYear(), today.getMonth() - i, 1);
+      lastSixMonths.push(months[date.getMonth()]);
+    }
+    
+    return lastSixMonths;
+  };
 
-  // User growth data
-  const userGrowthData = [
-    { month: "Jan", users: 890 },
-    { month: "Feb", users: 1150 },
-    { month: "Mar", users: 1420 },
-    { month: "Apr", users: 1680 },
-    { month: "May", users: 2100 },
-    { month: "Jun", users: 2450 },
-  ];
+  const monthNames = getLastSixMonths();
+
+  // Revenue data over time (dynamically generated for last 6 months)
+  const revenueData = monthNames.map((month, index) => ({
+    month,
+    revenue: 4200 + (index * 850) + Math.floor(Math.random() * 500),
+    expenses: 2400 + (index * 280) + Math.floor(Math.random() * 200),
+    profit: 1800 + (index * 580) + Math.floor(Math.random() * 300),
+  }));
+
+  // User growth data (dynamically generated for last 6 months)
+  const userGrowthData = monthNames.map((month, index) => ({
+    month,
+    users: 890 + (index * 310) + Math.floor(Math.random() * 100),
+  }));
 
   // Sales by category
   const salesByCategory = [
