@@ -82,7 +82,7 @@ export default function Projects({ setCurrentPage, setWorkPage }) {
         {/* Projects Section */}
         <div id="projects">
           <h2 className="text-5xl font-bold text-center mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-            Featured Projects
+            Demo Projects
           </h2>
           <p className="text-xl text-gray-600 text-center mb-12">Showcasing my Full stack/UI ,Cloud deployments skills</p>
 
